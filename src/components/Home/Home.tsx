@@ -1,4 +1,3 @@
-import React from 'react';
 import './Home.css';
 import { FaGithub, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 

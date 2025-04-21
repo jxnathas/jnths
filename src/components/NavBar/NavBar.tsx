@@ -1,4 +1,3 @@
-import React from 'react';
 import './NavBar.css';
 import logo from '../../assets/logo.png';
 import { FaHome, FaUserCheck, FaEnvelope, FaBlackTie, FaUserGraduate } from 'react-icons/fa';
