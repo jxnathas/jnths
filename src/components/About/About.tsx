@@ -9,7 +9,7 @@ export const About = () => {
                 <div className='about-data grid'>
                     <div className="about-info">
                         <p className="about-description">Hi, my name is Jonathas and I'm a Software Engineer from Bahia, Brazil.
-                            I've been working on every kind of solutions. Checkout my projects!
+                            I've been working on every kind of solutions. Check my projects!
                             Building software since 2020, I have experience in web development, DevOps and recently mobile.
                             </p>
                         <a href="https://docs.google.com/document/d/1kvbBJnatjwBnzJhV94Fs7LRUlRxDihNGa7xJRGp9QIw/edit?usp=sharing"
