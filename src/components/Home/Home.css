@@ -28,9 +28,26 @@ img{
     margin-bottom: 0.5rem;
 }
 
-.social{
+.home-subtitle{
+    font-size: var(--h2);
+    font-weight: 500;
+    color: #242424;
+    margin-bottom: 1.5rem;
+}
+
+.home-socials{
     display: flex;
     column-gap: 1.75rem;
     margin: 1.5rem 0;
     justify-content: center;
+}
+
+.home-social-link{
+    color: #242424;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.home-social-link:hover{
+    color: #addef3;
 }

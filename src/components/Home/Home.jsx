@@ -14,7 +14,7 @@ const Home = () => {
                     <a href="github.com/jxnathas" target="_blank" rel="noopener noreferrer" className="home-social-link"><FaGithub/></a>
                     <a href="https://www.instagram.com/_jnths/" target="_blank" rel="noopener noreferrer" className="home-social-link"><FaInstagram/></a>
                 </div>
-                <button className="home-button">Talk with me!</button>
+                <a href="#contact" className="btn">Talk with me!</a>
             </div>
         </section>
     );
