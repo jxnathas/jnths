@@ -2,7 +2,7 @@ import './NavBar.css';
 import logo from '../../assets/logo.png';
 import { FaHome, FaUserCheck, FaEnvelope, FaBlackTie, FaUserGraduate } from 'react-icons/fa';
 
-const NavBar = () => {
+export const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -38,5 +38,3 @@ const NavBar = () => {
         </nav>
     );
 };
-
-export default NavBar;
