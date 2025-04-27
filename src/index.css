@@ -39,9 +39,28 @@ body, input, button, textarea{
 }
 
 body{
+  margin: 0;
+  padding: 0;
   background-color: #f8f8f8;
   line-height: 1.7;
   color: var(--text);
+  overflow-x: hidden;
+  position: relative;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 h1, h2, h3{
@@ -95,7 +114,7 @@ img{
 
 .section_title::before{
   content: '';
-  background: url('./assets/dots-bg.svg');
+  background: url('./assets/section-bg.svg');
   height: 2.25rem;
   width: 2.25rem;
   position: absolute;
