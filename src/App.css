@@ -5,7 +5,6 @@
   text-align: center;
 }
 
-
 .home-bg {
   position: fixed;
   top: 0;
@@ -21,36 +20,28 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 250%;
   height: auto;
-  z-index: 0; 
-  pointer-events: none; 
+  min-height: 100px;
 }
 
-.wave1 {
-  animation: wave1 3s ease-in-out infinite alternate;
-}
-.wave2 {
-  animation: wave2 3s 1.2s ease-in-out infinite alternate;
-}
-.wave3 {
-  animation: wave3 3s 0.7s ease-in-out infinite alternate;
-}
-
-@keyframes wave1 {
-  from {
-    transform: translateX(-2000px);
+@keyframes waveFlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-43%);
   }
 }
 
-@keyframes wave2 {
-  from {
-    transform: translateX(-1800px);
-  }
+.wave-1 {
+  animation: waveFlow 20s linear 1.3s infinite alternate;
 }
 
-@keyframes wave3 {
-  from {
-    transform: translateX(-1600px);
-  }
+.wave-2 {
+  animation: waveFlow 20s linear 1.9s infinite alternate;
+}
+
+.wave-3 {
+  animation: waveFlow 20s linear 1.6s infinite alternate;
 }
