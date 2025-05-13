@@ -1,0 +1,148 @@
+/* Resume Section */
+.resume {
+    padding: 4rem 0;
+}
+
+.resume-container {
+    gap: 2rem;
+}
+
+.resume-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.timeline {
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 3rem;
+}
+
+.timeline-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-icon {
+    font-size: 1.2rem;
+    color: #4A8B99;
+}
+
+.timeline-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.timeline-data {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.timeline-data::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 13px;
+    height: 13px;
+    background-color: #4A8B99;
+    border-radius: 50%;
+}
+
+.timeline-data::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 0.875rem;
+    width: 1px;
+    height: calc(100% + 0.5rem);
+    background-color: #e0e0e0;
+}
+
+.timeline-data:last-child::after {
+    display: none;
+}
+
+.timeline-data-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-data-subtitle {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.timeline-date {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-date-icon {
+    font-size: 0.75rem;
+}
+
+.timeline-description {
+    font-size: 0.875rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .resume {
+        padding: 2rem 0;
+    }
+    
+    .resume-card {
+        padding: 1.5rem;
+    }
+    
+    .timeline-title {
+        font-size: 1.3rem;
+    }
+    
+    .timeline-data-title {
+        font-size: 1rem;
+    }
+    
+    .timeline-data-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    .timeline-description {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .resume-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
