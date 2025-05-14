@@ -1,6 +1,6 @@
 import './NavBar.css';
 import logo from '../../assets/logo.png';
-import { FaHome, FaUserCheck, FaEnvelope, FaBlackTie, FaUserGraduate } from 'react-icons/fa';
+import { FaHome, FaUserCheck, FaEnvelope, FaBlackTie, FaUserGraduate, FaFolderOpen } from 'react-icons/fa';
 
 export const NavBar = () => {
     return (
@@ -22,6 +22,11 @@ export const NavBar = () => {
                 <li className="navbar-item">
                     <a href="#services">
                         <FaBlackTie className="navbar-icon" />
+                    </a>
+                </li>
+                <li className="navbar-item">
+                    <a href="#projects">
+                        <FaFolderOpen className="navbar-icon" />
                     </a>
                 </li>
                 <li className="navbar-item">
