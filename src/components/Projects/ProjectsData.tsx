@@ -45,7 +45,7 @@ export const projectsData = [
         description: 'A responsive portfolio website showcasing my projects and skills, built with modern web technologies and smooth animations.',
         image: 'https://via.placeholder.com/400x250/6FB7C2/ffffff?text=Portfolio+Website',
         technologies: ['React', 'HTML', 'CSS3', 'JavaScript', 'Vite'],
-        githubUrl: 'https://github.com/jxnathas/_jnths',
+        githubUrl: 'https://github.com/jxnathas/jnths',
         liveUrl: 'https://jnths-se.vercel.app/',
         category: 'frontend'
     },

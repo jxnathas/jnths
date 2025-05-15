@@ -57,11 +57,47 @@
 }
 
 .navbar a:hover {
-    color: #addef3;
+    color: #4A8B99;
 }
 
 .navbar-logo-img {
     width: 42px;
     height: 42px;
     margin-right: 5px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+        padding: 10px 15px;
+    }
+    
+    .navbar-logo {
+        display: none;
+    }
+    
+    .navbar-list {
+        justify-content: space-around;
+        gap: 20px;
+        max-width: 100%;
+    }
+    
+    .navbar-icon {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+    
+    .navbar-list {
+        gap: 15px;
+    }
+    
+    .navbar-icon {
+        font-size: 20px;
+    }
 }

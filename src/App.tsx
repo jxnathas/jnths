@@ -6,6 +6,7 @@ import { Services } from './components/Services/Services.js';
 import { Projects } from './components/Projects/Projects.js';
 import { Resume } from './components/Resume/Resume.js';
 import { Contact } from './components/Contact/Contact.js';
+import { ScrollIndicator } from './components/ScrollIndicator/ScrollIndicator.js';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Resume />
         <Contact />
       </main>
+      <ScrollIndicator />
     </div>
   );
 }
