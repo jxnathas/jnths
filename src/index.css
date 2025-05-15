@@ -13,18 +13,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --first: hsl(353, 100%, 65%)
-  --title: hsl(244, 24%, 26%)
-  --text: hsl(244, 16%, 43%)
-  --body: hsl(258, 60%, 98%)
+  --first: hsl(353, 100%, 65%);
+  --title: hsl(244, 24%, 26%);
+  --text: hsl(244, 16%, 43%);
+  --body: hsl(258, 60%, 98%);
   --container: #fff;
+  
+  /* Color variables for components */
+  --title-color: hsl(244, 24%, 26%);
+  --text-color: hsl(244, 16%, 43%);
+  --primary-color: #4A8B99;
+  --secondary-color: #6FB7C2;
 
   --h1: 2.25rem;
-  --h2: 1.5rem
+  --h2: 1.5rem;
   --h3: 1.25rem;
-  --normal: 1rem
+  --normal: 1rem;
   --small: 0.875rem;
-  --smaller: 0.813rem
+  --smaller: 0.813rem;
 
 
   --shadow: 0px 5px 20px 0px rgb(69 67 98 / 10%)
@@ -106,20 +112,8 @@ img{
 
 .section_title{
   font-size: var(--h1);
-  margin-left: 0.875rem;
   font-weight: 700;
-  position: relative;
   margin-bottom: 3.75rem;
-}
-
-.section_title::before{
-  content: '';
-  background: url('./assets/section-bg.svg');
-  height: 2.25rem;
-  width: 2.25rem;
-  position: absolute;
-  left: -0.875rem;
-  top: -0.875rem;
 }
 
 .btn{

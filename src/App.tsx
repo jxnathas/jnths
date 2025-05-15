@@ -3,6 +3,9 @@ import { About } from './components/About/About.js';
 import { Home } from './components/Home/Home.js';
 import { NavBar } from './components/NavBar/NavBar.js';
 import { Services } from './components/Services/Services.js';
+import { Projects } from './components/Projects/Projects.js';
+import { Resume } from './components/Resume/Resume.js';
+import { Contact } from './components/Contact/Contact.js';
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
         <NavBar />
         <About />
         <Services />
+        <Projects />
+        <Resume />
+        <Contact />
       </main>
     </div>
   );
