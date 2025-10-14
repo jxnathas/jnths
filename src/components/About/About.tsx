@@ -12,7 +12,7 @@ export const About = () => {
                             I've been working on every kind of solutions. Check my projects!
                             Building software since 2020, I have experience in web development, UI/UX Design, DevOps and recently mobile.
                             </p>
-                        <a href="https://drive.google.com/file/d/12JCD_9_Ejit9JI4Lx1D-Gupe_GzQjGyG/view?usp=sharing"
+                        <a href="https://drive.google.com/file/d/1dBfRqmoUPh7WlkG8z286XmeNLaZIiTGN/view?usp=sharing"
                         target="_blank"
                         className="btn">Download CV
                         </a>
