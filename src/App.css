@@ -5,43 +5,45 @@
   text-align: center;
 }
 
-.home-bg {
+.terminal-header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  z-index: -1;
-  pointer-events: none;
+  right: 0;
+  z-index: 999;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: inherit;
 }
 
-.waves {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 250%;
-  height: auto;
-  min-height: 100px;
+.terminal-dots {
+  display: flex;
+  gap: 6px;
 }
 
-@keyframes waveFlow {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-43%);
-  }
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
 }
 
-.wave-1 {
-  animation: waveFlow 20s linear 1.3s infinite alternate;
+.dot-red { background-color: #ff5f56; }
+.dot-yellow { background-color: #ffbd2e; }
+.dot-green { background-color: #27c93f; }
+
+.terminal-title {
+  color: var(--text-dim);
+  font-size: 0.85rem;
 }
 
-.wave-2 {
-  animation: waveFlow 20s linear 1.9s infinite alternate;
-}
-
-.wave-3 {
-  animation: waveFlow 20s linear 1.6s infinite alternate;
+.terminal-title::after {
+  content: "█";
+  color: var(--text-dim);
+  animation: blink 1s step-end infinite;
+  margin-left: 4px;
 }

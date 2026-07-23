@@ -6,15 +6,18 @@
 
 .about-img{
     width: 300px;
-    border-radius: 50%;
+    border-radius: 0;
+    border: 2px solid var(--border-color);
+    padding: 4px;
 }
+
 .about-data{
     padding: 1.875rem;
-    background-color: #FFF;
-    box-shadow: 0px 5px 20px 0px rgb(69 67 98 / 10%);
-    border-radius: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.875rem;
+    background-color: var(--bg-panel);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    border-radius: 0;
+    grid-template-columns: 1fr;
     align-items: flex-start;
     position: relative;
 }
@@ -25,69 +28,14 @@
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    
-    
     position: absolute;
     left: -0.93rem;
     top: 20%;
-    
 }
 
 .about-description{
     margin-bottom: 1rem;
     text-align: justify;
-}
-
-.about-skills{
-    row-gap: 1.25rem;
-}
-
-.skill-title{
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill-name{
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-.skill-number{
-    line-height: 1.2;
-}
-
-.skill-bar, .skill-percentage{
-    height: 7px;
-    border-radius: 0.25rem;
-}
-
-.skill-bar{
-    background-color: #f3f3f3;
-}
-
-.skill-percentage{
-    display: block;
-}
-
-.frontend{
-    width: 80%;
-    background-color: rgb(40, 0, 80);
-}
-
-.backend{
-    width: 60%;
-    background-color: rgb(40, 0, 60);
-}
-
-.devops{
-    width: 50%;
-    background-color: rgb(40, 0, 50);
-}
-
-.mobile{
-    width: 10%;
-    background-color: rgb(40, 0, 10);
-
 }
 
 @media screen and (max-width: 1024px) {
@@ -100,7 +48,7 @@
     .about-data::before{
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid #FFF;
+        border-bottom: 10px solid var(--bg-panel);
         left: 49%;
         top: -8%;
     }

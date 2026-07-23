@@ -18,51 +18,7 @@ export const About = () => {
                         </a>
                     </div>
                     
-                    <div className='about-skills grid'>
-                        <div className='skill-data'>
-                            <div className='skill-title'>
-                                <h3 className='skill-name'>Front-End</h3>
-                                <span className='skill-number '>80%</span>
-                            </div>
-                            <div className='skill-bar'>
-                                <span className='skill-percentage frontend'></span>
-                            </div>
-                        </div>
-
-                        <div className='skill-data'>
-                            <div className='skill-title'>
-                                <h3 className='skill-name'>Back-End</h3>
-                                <span className='skill-number '>60%</span>
-                            </div>
-                            <div className='skill-bar'>
-                                <span className='skill-percentage backend'></span>
-                            </div>
-                        </div>
-
-                        <div className='skill-data'>
-                            <div className='skill-title'>
-                                <h3 className='skill-name'>DevOps</h3>
-                                <span className='skill-number '>50%</span>
-                            </div>
-                            <div className='skill-bar'>
-                                <span className='skill-percentage devops'></span>
-                            </div>
-                        </div>
-
-                        <div className='skill-data'>
-                            <div className='skill-title'>
-                                <h3 className='skill-name'>Mobile</h3>
-                                <span className='skill-number '>10%</span>
-                            </div>
-                            <div className='skill-bar'>
-                                <span className='skill-percentage mobile'></span>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
-
             </div>
         </section>
     );
