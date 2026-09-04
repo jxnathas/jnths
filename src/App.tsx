@@ -1,7 +1,6 @@
 import './App.css';
 import { About } from './components/About/About.js';
 import { Home } from './components/Home/Home.js';
-import { Projects } from './components/Projects/Projects.js';
 import { Resume } from './components/Resume/Resume.js';
 import { Contact } from './components/Contact/Contact.js';
 import { ScrollIndicator } from './components/ScrollIndicator/ScrollIndicator.js';
@@ -20,7 +19,6 @@ function App() {
       <main>
         <Home />
         <About />
-        <Projects />
         <Resume />
         <Contact />
       </main>
