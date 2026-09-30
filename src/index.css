@@ -36,6 +36,43 @@
   --bg-panel: #111111;
   --bg-hover: #1a1a1a;
   --text-dim: #707070;
+  --header-bg: #1a1a1a;
+  --selection-bg: #c0c0c0;
+  --selection-text: #0a0a0a;
+  --terminal-title: #707070;
+}
+
+:root[data-theme='light']{
+  color-scheme: light;
+  color: #3a3a3a;
+  background-color: #ededed;
+
+  --first: #5a5a5a;
+  --title: #1a1a1a;
+  --text: #3d3d3d;
+  --body: #ededed;
+  --container: #ffffff;
+
+  --title-color: #1a1a1a;
+  --text-color: #3d3d3d;
+  --primary-color: #5a5a5a;
+  --secondary-color: #6a6a6a;
+
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  --border-color: #a8a8a8;
+  --bg-dark: #ededed;
+  --bg-panel: #ffffff;
+  --bg-hover: #e2e2e2;
+  --text-dim: #7a7a7a;
+  --header-bg: #ffffff;
+  --selection-bg: #5a5a5a;
+  --selection-text: #ffffff;
+  --terminal-title: #7a7a7a;
+}
+
+::selection{
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 html{
@@ -49,11 +86,12 @@ body, input, button, textarea{
 body{
   margin: 0;
   padding: 0;
-  background-color: #0a0a0a;
+  background-color: var(--bg-dark);
   line-height: 1.7;
   color: var(--text);
   overflow-x: hidden;
   position: relative;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 main {
@@ -78,6 +116,9 @@ button{
   cursor: pointer;
   border: none;
   outline: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
 }
 
 img{
@@ -131,7 +172,7 @@ img{
 
 .btn:hover{
   background-color: var(--first);
-  color: var(--bg-dark);
+  color: var(--bg-panel);
 }
 
 @keyframes blink {

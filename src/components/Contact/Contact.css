@@ -140,16 +140,21 @@
     font-size: 0.9rem;
     font-family: inherit;
     transition: border-color 0.3s ease;
-    background-color: #0a0a0a;
+    background-color: var(--bg-dark);
     color: var(--first);
+}
+
+.contact-form-input::placeholder,
+.contact-form-textarea::placeholder {
+    color: var(--text-dim);
 }
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
     outline: none;
     border-color: var(--first);
-    background-color: #0a0a0a;
-    box-shadow: 0 0 5px rgba(51, 255, 51, 0.3);
+    background-color: var(--bg-dark);
+    box-shadow: var(--shadow);
 }
 
 .contact-form-textarea {
@@ -176,9 +181,9 @@
 
 .contact-form-button:hover {
     background: var(--first);
-    color: var(--bg-dark);
+    color: var(--bg-panel);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(51, 255, 51, 0.3);
+    box-shadow: var(--shadow);
 }
 
 @media screen and (max-width: 768px) {

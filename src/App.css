@@ -11,9 +11,10 @@
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: #1a1a1a;
+  background-color: var(--header-bg);
   border-bottom: 1px solid var(--border-color);
   padding: 8px 16px;
+  transition: background-color 0.25s ease;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -37,13 +38,13 @@
 .dot-green { background-color: #27c93f; }
 
 .terminal-title {
-  color: var(--text-dim);
+  color: var(--terminal-title);
   font-size: 0.85rem;
 }
 
 .terminal-title::after {
   content: "█";
-  color: var(--text-dim);
+  color: var(--terminal-title);
   animation: blink 1s step-end infinite;
   margin-left: 4px;
 }
