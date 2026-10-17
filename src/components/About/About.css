@@ -14,55 +14,23 @@
 
 .about-data{
     width: 100%;
+    max-width: 880px;
     padding: 2.5rem;
     background-color: var(--bg-panel);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
+    text-align: left;
 }
 
-.about-lead{
-    font-size: var(--h2);
-    line-height: 1.5;
-    color: var(--title-color);
-    margin-bottom: 1.75rem;
-}
-
-.about-data p{
-    margin-bottom: 1.25rem;
-}
-
-.about-highlight{
-    color: var(--title-color);
-    font-weight: 700;
-    padding-left: 1rem;
-    border-left: 2px solid var(--first);
-}
-
-.about-italic{
-    font-style: italic;
-}
-
-.about-stack{
-    font-weight: 700;
-    color: var(--title-color);
-}
-
-.about-quote{
-    margin: 0 0 1.25rem;
-    padding: 0.75rem 1.25rem;
-    border-left: 3px solid var(--first);
-    background-color: var(--bg-hover);
-    color: var(--text);
-    font-style: italic;
-}
-
-.about-closing{
-    color: var(--title-color);
-    margin-bottom: 2rem;
+.about-paragraph{
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+    white-space: pre-line;
 }
 
 .about-btn{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
@@ -72,9 +40,5 @@
 
     .about-data{
         padding: 1.5rem;
-    }
-
-    .about-lead{
-        font-size: var(--h3);
     }
 }
