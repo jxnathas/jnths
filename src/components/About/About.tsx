@@ -22,14 +22,16 @@ export const About = () => {
                         <p key={index} className="about-paragraph">{renderText(block)}</p>
                     ))}
 
-                    <a
-                        href="https://drive.google.com/file/d/1dBfRqmoUPh7WlkG8z286XmeNLaZIiTGN/view?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn about-btn"
-                    >
-                        {t.about.downloadCv}
-                    </a>
+                    <div className="about-btn-wrapper">
+                        <a
+                            href="https://drive.google.com/file/d/1dBfRqmoUPh7WlkG8z286XmeNLaZIiTGN/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn about-btn"
+                        >
+                            {t.about.downloadCv}
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

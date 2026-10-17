@@ -28,9 +28,14 @@
     white-space: pre-line;
 }
 
-.about-btn{
+.about-btn-wrapper{
+    display: flex;
+    justify-content: center;
     margin-top: 1rem;
-    display: inline-block;
+}
+
+.about-btn{
+    display: inline-flex;
 }
 
 @media screen and (max-width: 768px) {
