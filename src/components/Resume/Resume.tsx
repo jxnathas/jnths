@@ -5,21 +5,26 @@ import type { TimelineEntry } from '../../i18n/translations';
 
 const Timeline = ({ entries }: { entries: TimelineEntry[] }) => (
     <div className="timeline-list">
-        {entries.map((entry) => (
-            <div className="timeline-data" key={`${entry.subtitle}-${entry.date}`}>
-                <div>
-                    <h3 className="timeline-data-title">{entry.title}</h3>
-                    <span className="timeline-data-subtitle">{entry.subtitle}</span>
-                    <div className="timeline-date">
-                        <FaCalendarAlt className="timeline-date-icon" />
-                        <span>{entry.date}</span>
+        {entries.map((entry) => {
+            const key = entry.date ? `${entry.subtitle}-${entry.date}` : `${entry.subtitle}`;
+            return (
+                <div className="timeline-data" key={key}>
+                    <div>
+                        <h3 className="timeline-data-title">{entry.title}</h3>
+                        <span className="timeline-data-subtitle">{entry.subtitle}</span>
+                        {entry.date && (
+                            <div className="timeline-date">
+                                <FaCalendarAlt className="timeline-date-icon" />
+                                <span>{entry.date}</span>
+                            </div>
+                        )}
+                        {entry.description && (
+                            <p className="timeline-description">{entry.description}</p>
+                        )}
                     </div>
-                    {entry.description && (
-                        <p className="timeline-description">{entry.description}</p>
-                    )}
                 </div>
-            </div>
-        ))}
+            );
+        })}
     </div>
 );
 

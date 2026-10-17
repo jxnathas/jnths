@@ -11,7 +11,7 @@ export type StoryBlock =
 export type TimelineEntry = {
     title: string;
     subtitle: string;
-    date: string;
+    date?: string;
     description?: string;
 };
 
@@ -169,12 +169,10 @@ export const translations: Record<Language, Translation> = {
                 {
                     title: 'Systems Analyses and Development',
                     subtitle: 'Anhanguera Educational',
-                    date: '2023 - 2025',
                 },
                 {
                     title: 'Cloud Computing',
                     subtitle: 'CEPEDI',
-                    date: 'Jun/2023 - Dec/2023',
                 },
                 {
                     title: 'Computer Engineering',
@@ -184,28 +182,24 @@ export const translations: Record<Language, Translation> = {
                 {
                     title: 'Full Stack Development',
                     subtitle: 'Udemy Courses',
-                    date: '2020 - Present',
                 },
             ],
             experienceEntries: [
                 {
                     title: 'Software Engineer',
                     subtitle: 'MB Labs',
-                    date: '2025 - Present',
                     description:
                         'Developing web applications using React, TypeScript, and Node.js. Working with cloud services and implementing DevOps practices.',
                 },
                 {
                     title: 'Software Engineer',
                     subtitle: 'Castelo Branco Business Solutions',
-                    date: '2022 - 2024',
                     description:
                         'Created responsive websites and web applications for various clients. Specialized in React, JavaScript, and modern CSS frameworks.',
                 },
                 {
                     title: 'Software Developer',
                     subtitle: 'UrbanMob APP',
-                    date: '2020 - 2021',
                     description:
                         'Started my professional journey learning web development fundamentals. Worked on HTML, CSS, JavaScript, and basic React projects.',
                 },
@@ -348,12 +342,10 @@ export const translations: Record<Language, Translation> = {
                 {
                     title: 'Análise e Desenvolvimento de Sistemas',
                     subtitle: 'Anhanguera Educacional',
-                    date: '2023 - 2025',
                 },
                 {
                     title: 'Computação em Nuvem',
                     subtitle: 'CEPEDI',
-                    date: 'Jun/2023 - Dez/2023',
                 },
                 {
                     title: 'Engenharia da Computação',
@@ -363,28 +355,24 @@ export const translations: Record<Language, Translation> = {
                 {
                     title: 'Desenvolvimento Full Stack',
                     subtitle: 'Cursos Udemy',
-                    date: '2020 - Presente',
                 },
             ],
             experienceEntries: [
                 {
                     title: 'Engenheiro de Software',
                     subtitle: 'MB Labs',
-                    date: '2025 - Presente',
                     description:
                         'Desenvolvendo aplicações web com React, TypeScript e Node.js. Trabalhando com serviços em nuvem e aplicando práticas de DevOps.',
                 },
                 {
                     title: 'Engenheiro de Software',
                     subtitle: 'Castelo Branco Business Solutions',
-                    date: '2022 - 2024',
                     description:
                         'Criei sites e aplicações web responsivos para diversos clientes. Especializado em React, JavaScript e frameworks modernos de CSS.',
                 },
                 {
                     title: 'Desenvolvedor de Software',
                     subtitle: 'UrbanMob APP',
-                    date: '2020 - 2021',
                     description:
                         'Comecei minha jornada profissional aprendendo os fundamentos do desenvolvimento web. Trabalhei com HTML, CSS, JavaScript e projetos básicos em React.',
                 },
